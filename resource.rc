@@ -1,0 +1,156 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CURSOR_SEARCH_WINDOW CURSOR                  "searchw.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU
+BEGIN
+    POPUP "S&earch"
+    BEGIN
+        MENUITEM "&Find Window",                IDM_FIND_WINDOW
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About",                      IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_SEARCH_WINDOW DIALOGEX 0, 0, 298, 216
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "Search Window"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    LTEXT           "Search for a window by pressing the left-mouse button on the Finder Tool and then dragging it over a window and then releasing the mouse button to select the window. To retreive child window's information from different process, you must open ",IDC_STATIC,7,7,284,33,SS_SUNKEN
+    LTEXT           "X : ",IDC_STATIC,193,59,12,8
+    LTEXT           "Y : ",IDC_STATIC,193,73,12,8
+    LTEXT           "AAAAAAAAAAA",IDC_STATIC_X_POS,207,59,52,8
+    LTEXT           "AAAAAAAAAAAA",IDC_STATIC_Y_POS,207,73,57,8
+    CONTROL         107,IDC_STATIC_ICON_FINDER_TOOL,"Static",SS_BITMAP | SS_NOTIFY,93,54,21,20
+    LTEXT           "Finder Tool :",IDC_STATIC,51,54,40,8
+    CONTROL         "",IDC_WND_TREE,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,94,94,115
+    CONTROL         "",IDC_LVW_WINDOW_PROP,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,106,165,185,44
+    CONTROL         "Hide window during dragging",IDC_CHK_HIDE_TOOL_WINDOW,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,51,75,107,10
+    LTEXT           "Class name:",IDC_STT_CLASS_NAME,106,94,39,8
+    EDITTEXT        IDC_EDT_WND_CLASS_NAME,147,92,144,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "HWND:",IDC_STT_HWND,106,110,26,8
+    EDITTEXT        IDC_EDT_WND_HANDLE,147,108,144,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Text:",IDC_STT_TITLE,106,126,17,8
+    EDITTEXT        IDC_EDT_WND_TITLE,147,124,144,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Rect:",IDC_STT_WND_RECT,106,142,17,8
+    LTEXT           "X:",IDC_STT_WND_X,147,142,8,8
+    EDITTEXT        IDC_EDT_WND_X,155,141,22,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Y:",IDC_STT_WND_Y,184,142,8,8
+    EDITTEXT        IDC_EDT_WND_Y,191,141,22,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "W:",IDC_STT_WND_WIDTH,220,142,10,8
+    EDITTEXT        IDC_EDT_WND_WIDTH,230,141,22,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "H:",IDC_STT_WND_HEIGHT,261,142,8,8
+    EDITTEXT        IDC_EDT_WND_HEIGHT,269,141,22,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Others:",IDC_STT_ADDITION,106,156,24,8
+    CONTROL         "",IDC_TVW_WND_DETAIL,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_SHOWSELALWAYS | WS_BORDER | WS_HSCROLL | WS_TABSTOP,106,165,185,44
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_DIALOG_SEARCH_WINDOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_FINDER_EMPTY BITMAP                  "findere.bmp"
+IDB_BITMAP_FINDER_FILLED BITMAP                  "finderf.bmp"
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
